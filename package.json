@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3",
-    "mongoose": "^4.1.12"
+    "mongoose": "^4.1.12",
+    "multer": "^1.0.6"
   }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CHANGE THIS</title>
+		<title>Upload form</title>
 		<link rel = "stylesheet" href = "includes/style.css">
 		<script type="text/javascript" src="includes/jquery-2.1.1.min.js"></script>
 	</head>
@@ -12,7 +12,11 @@
 				<h1>Upload dialog</h1>
 			</header>
 			<main>
-				<form><p>FORM</p></form>
+				<h3>Form</h3>
+				<form action="../submit" method="POST" enctype="multipart/form-data">
+					<input type="file" name="doc">
+					<input type="submit">
+				</form>
 			</main>
 		
 		</div>
