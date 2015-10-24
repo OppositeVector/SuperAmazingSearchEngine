@@ -1,7 +1,6 @@
 var mongoose = require("mongoose");
 var wordSchema = require("./WordSchema");
 var docSchema = require("./DocSchema");
-var configSchema = require("./ConfigSchema");
 var analyzer = require("./Analyzer");
 var ConfigHandler = require("./ConfigHandler");
 

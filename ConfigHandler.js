@@ -1,4 +1,4 @@
-var configSchema = require("./configSchema");
+var configSchema = require("./ConfigSchema");
 
 var n = "ConfigHandler"
 var configModel;
