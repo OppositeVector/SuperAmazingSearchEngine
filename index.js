@@ -6,6 +6,8 @@ var path = require("path");
 var multer  = require('multer');
 var upload = multer({ dest: 'uploaded/' });
 
+var dbc = require("./DBController");
+
 var port = process.env.PORT || 8080;
 
 var app = express();
@@ -32,11 +34,14 @@ app.post("/submit", function(req, res) {
 			console.log(err);
 			res.send("Error ! -- " + err);
 		} else {
-			console.log(JSON.stringify(req.files));
+			// console.log(JSON.stringify(req.files));
 			for(var i = 0; i < req.files.length; ++i) {
-				fs.rename(req.files[i].path, req.files[i].path + findExtension(req.files[i].originalname));
+				finalPath = req.files[i].path + findExtension(req.files[i].originalname);
+				fs.rename(req.files[i].path, finalPath);
+				dbc.InsertDocument({ path: finalPath, name: req.files[i].originalname }, function() {
+					res.send("Success !" + JSON.stringify(req.files));
+				});
 			}
-			res.send("Success !" + JSON.stringify(req.files));
 		}
 	});
 });
