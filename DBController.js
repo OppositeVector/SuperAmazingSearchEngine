@@ -22,7 +22,7 @@ con.once('open',function(err){
 
 });
 
-exports.GetDocuments(docIds, callback) {
+exports.GetDocuments = function(docIds, callback) {
 
 	if(callback == null) {
 		console.log(TAG + ".GetDocuments didnt receive a callback");
@@ -34,7 +34,7 @@ exports.GetDocuments(docIds, callback) {
 		return;
 	}
 
-	docModel.find({_id: {#in: docIds}}, function(err, documents) {
+	docModel.find({_id: {$in: docIds}}, function(err, documents) {
 
 		if(err) {
 			callback(err);

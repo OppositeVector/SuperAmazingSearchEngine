@@ -21,6 +21,8 @@ function findExtension(path) {
 }
 
 app.get("/", function(req, res) {
+	fs.readFile()
+	res.send(file);
 	res.send("Working !");
 });
 
