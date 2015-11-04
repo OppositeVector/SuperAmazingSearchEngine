@@ -14,12 +14,14 @@ var tokenizer = require("./myModules/Tokenizer");
 var stopList = require("./myModules/stopList");
 var hash = require("./myModules/Hash");
 
+Array.prototype.insert = function (index, items) { this.splice.apply(this, [index, 0].concat(items)); }
+
 var port = process.env.PORT || 8080;
 
 var app = express();
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
 
 function findExtension(path) {
 
@@ -613,6 +615,38 @@ app.get("/query", function(req, res) {
 
 });
 
+var operatorsRegex = /(AND)|(OR)/;
+
+function ParseOperators(complex) {
+
+	for(var i = 0; i < complex.length; ++i) {
+		if(complex[i].t == 0) {
+			console.log("HERE");
+			complex[i].v = complex[i].v.split(operatorsRegex);
+			for(var j = 0; j < complex[i].v.length; ++j) {
+				if(complex[i].v[j] == null) {
+					complex[i].v.splice(j, 1);
+					--j;
+				} else {
+					console.log(JSON.stringify(complex[i].v[j]));
+					var split = complex[i].v[j].split(" ");
+					for(var k = 0; k < split.length; ++k) {
+						if(split[k].length == 0) {
+							split.splice(k, 1);
+							--k;
+						}
+					}
+					complex[i].v.splice(j, 1);
+					complex[i].v.insert(j, split);
+				}
+			}
+		} else {
+			ParseOperators(complex[i].v);
+		}
+	}
+
+}
+
 app.get("/cquery", function(req, res) {
 
 	var query = url.parse(req.url, true).query.query;
@@ -675,35 +709,20 @@ app.get("/cquery", function(req, res) {
 	}
 
 	var complex = BreakComplex();
-	var operatorsRegex = /(AND)|(OR)|(NOT)/;
 
-	function ParseOperators(complex) {
+	ParseOperators(complex);
+
+	function CommitOperators(complex) {
 
 		for(var i = 0; i < complex.length; ++i) {
+
 			if(complex[i].t == 0) {
-				console.log("HERE");
-				complex[i].v = complex[i].v.split(operatorsRegex);
-				for(var j = 0; j < complex[i].v.length; ++j) {
-					if(complex[i].v[j] == null) {
-						complex[i].v.splice(j, 1);
-						--j;
-					} else {
-						console.log(JSON.stringify(complex[i].v[j]));
-						var split = complex[i].v[j].split(" ");
-						if(split.length > 1) {
-							complex[i].v.splice(j, 1, split);
-							--j;
-						}
-					}
-				}
-			} else {
-				ParseOperators(complex[i].v);
+
 			}
+
 		}
 
 	}
-
-	ParseOperators(complex);
 
 	res.SendJson(complex);
 
