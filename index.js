@@ -11,7 +11,7 @@ var request = require('request');
 
 var dbc = require('./myModules/DBController');
 var tokenizer = require("./myModules/Tokenizer");
-var stopList = require("./myModules/stopList");
+var stopList = require("./myModules/StopList");
 var hash = require("./myModules/Hash");
 
 Array.prototype.insert = function (index, items) { this.splice.apply(this, [index, 0].concat(items)); }
@@ -712,17 +712,25 @@ app.get("/cquery", function(req, res) {
 
 	ParseOperators(complex);
 
-	function CommitOperators(complex) {
+	var docs = [];
 
-		for(var i = 0; i < complex.length; ++i) {
+	// function CommitOperators(complex) {
 
-			if(complex[i].t == 0) {
+	// 	for(var i = 0; i < complex.length; ++i) {
 
-			}
+	// 		if(complex[i].t == 0) {
+	// 			var words = [];
+	// 			for(var j = 0; j < complex[i].v.length) {
+	// 				if(words.length == 0) {
 
-		}
+	// 				}
+	// 				if(complex[i].v[j].localeCompare("AND"))
+	// 			}
+	// 		}
 
-	}
+	// 	}
+
+	// }
 
 	res.SendJson(complex);
 
