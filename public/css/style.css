@@ -1,0 +1,228 @@
+* { margin:0; padding:0 }
+
+header, nav, main, aside, footer, section, article {
+	display:block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+body {
+	background-color: #c3d4e3;
+	color: #ffffff;
+	font-size: 25px;
+	font-family: "calibri";
+}
+
+.wrapper {
+	margin: auto;
+	width: 1020px;
+	color: #ffffff;
+}
+
+.clear {
+	clear: both;
+}
+
+header {
+	font-size: 50px;
+}
+
+header #logo {
+	display: block;
+	background-image: url("../images/SASE Logo.png");
+	height: 163px;
+	width: 651px;
+	margin: auto;
+}
+
+header #manage {
+	float: right;
+	font-size: 18px;
+	color: #222628;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
+header input[type="search"] {
+	display: block;
+	width: 80%;
+	height: 40px;
+	font-size: 0.5em;
+	font-weight: 100;
+	text-align: center;
+	font-family: inherit;
+	float: left;
+}
+
+header button {
+	position: relative;
+	width: 17%;
+	height: 40px;
+	float: right;
+}
+
+header section {
+	margin-bottom: 15px;
+}
+
+main {
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: #fff;
+	color: #eee;
+	padding: 10px;
+	background-color: #78D;
+}
+
+main a {
+	color: #e3d1ff;
+}
+
+main a:hover {
+	color: #ffffff;
+}
+
+main article h3 {
+	text-align: center;
+}
+
+main article h4 {
+	text-align: left;
+}
+
+main article p {
+	font-size: 15px
+}
+
+.divider {
+	margin: 15px;
+	padding: 0px;
+	height: 1px;
+	background-image: url("../images/Divider.png");
+	background-size: 100%;
+}
+
+.space {
+	margin-top: 7px;
+	margin-bottom: 7px;
+	height: 1px;
+	background-image: url("../images/LightDivider.png");
+	background-size: 100%;
+}
+
+button {
+	position: relative;
+}
+
+/* Remnants of the previous style */
+/*
+#loadingOverlay {
+
+	height: 100%;
+	width: 100%;
+	background-color: #000000;
+	position: fixed;
+	z-index: 9999;
+	opacity: 0.4;
+
+}
+
+#loadingOverlay canvas {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.clear {
+	clear: both;
+}
+
+main {
+	margin-top: 30px;
+	background-color: #7788dd;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	padding: 15px;
+}
+
+button.remove {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 19%;
+	background-color: #ec4242;
+	float: right;
+	border-color: #b94040;
+	border-radius: 3px;
+}
+
+button.remove:hover {
+	background-color: #ffa0a0;
+	border-color: #ff2323;
+}
+
+button.remove:active {
+	background-color: #ffa0a0;
+	border-color: #ff2323;
+	border-style: inset;
+}
+
+
+input.upload {
+	margin-left: 330px;
+}
+
+article {
+	background-color: #cdeded;
+	height: 32px;
+	padding: 5px;
+	padding-right: 25px;
+	padding-left: 25px;
+	margin: 6px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: #0b4d4c;
+}
+
+article a {
+	width: 79%;
+	height: 100%;
+	color: #0b4d4c;
+}
+
+section {
+
+	padding: 10px;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+
+}
+
+.divider {
+	margin: 15px;
+	padding: 0px;
+	height: 1px;
+	background-image: url("../images/Divider.png");
+	background-size: 100%;
+}
+
+.space {
+	margin-top: 7px;
+	margin-bottom: 7px;
+	height: 1px;
+	background-image: url("../images/LightDivider.png");
+	background-size: 100%;
+}
+
+*/

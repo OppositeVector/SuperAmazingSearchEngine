@@ -1,0 +1,170 @@
+* { margin:0; padding:0 }
+a { text-decoration: none; color: #ffffff; }
+
+header, nav, main, aside, footer, section, article {
+	display:block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+body {
+	background-color: #c3d4e3;
+	color: #ffffff;
+	font-size: 25px;
+	font-family: "arial";
+}
+
+.wrapper {
+	margin: auto;
+	width: 1020px;
+	color: #ffffff;
+}
+
+#loadingOverlay {
+
+	height: 100%;
+	width: 100%;
+	background-color: #000000;
+	position: fixed;
+	z-index: 9999;
+	opacity: 0.4;
+
+}
+
+#loadingOverlay canvas {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.clear {
+	clear: both;
+}
+
+header h1 {
+	color: #2e5162;
+	text-shadow: 2px 2px 3px #64b3d9;
+}
+
+main {
+	margin-top: 30px;
+	background-color: #7788dd;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	padding: 15px;
+}
+
+button {
+
+	background-color: #a1a1e0;
+	border-radius: 3px;
+
+}
+
+button:hover {
+	background-color: #e4e4ff;
+	cursor: pointer;
+}
+
+button:active {
+	border-style: inset;
+}
+
+button.remove {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 19%;
+	background-color: #ec4242;
+	float: right;
+	border-color: #b94040;
+	border-radius: 3px;
+}
+
+button.remove:hover {
+	background-color: #ffa0a0;
+	border-color: #ff2323;
+	cursor: pointer;
+}
+
+button.remove:active {
+	background-color: #ffa0a0;
+	border-color: #ff2323;
+	border-style: inset;
+}
+
+
+input.upload {
+	margin-left: 330px;
+}
+
+input.html {
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 10px;
+}
+
+.insertHtmlButtons {
+	width: 250px;
+	margin: auto;
+}
+
+.insertHtmlButtons button {
+	width: 100px;
+	float: right;
+}
+
+.insertHtmlButtons button:first-child {
+	float: left;
+}
+
+article {
+	background-color: #cdeded;
+	height: 32px;
+	padding: 5px;
+	padding-right: 25px;
+	padding-left: 25px;
+	margin: 6px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: #0b4d4c;
+}
+
+article a {
+	width: 79%;
+	height: 100%;
+	color: #0b4d4c;
+}
+
+section {
+
+	margin: 5px;
+	padding: 10px;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+
+}
+
+.divider {
+	margin: 15px;
+	padding: 0px;
+	height: 1px;
+	background-image: url("../images/Divider.png");
+	background-size: 100%;
+}
+
+.space {
+	margin-top: 7px;
+	margin-bottom: 7px;
+	height: 1px;
+	background-image: url("../images/LightDivider.png");
+	background-size: 100%;
+}

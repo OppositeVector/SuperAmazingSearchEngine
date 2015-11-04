@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="databaseApp">
+	<head>
+		<title>Database Manager</title>
+		<link rel = "stylesheet" href = "css/style.css">
+		<script type="text/javascript" src="includes/js/lib/jquery/jquery-2.1.1.min.js"></script>
+	</head>
+
+	<body ng-controller="BodyController">
+		<!--<button onclick="lo.Obscure()">Obscure</button>
+		<button onclick="lo.Clear()">Clear</button>-->
+		<div class="wrapper">
+			<header>
+				<h1>Database Manager</h1>
+			</header>
+			<main>
+				<!--<section>
+					<h3>Upload a File</h3>
+					<div class="space"></div>
+					<input class="upload" type="file" name="doc" file-model="fileToUpload"/>
+					<button ng-click="UploadFile()">Upload</button>
+				</section>-->
+				<section>
+					<h3>Submit Web Documents</h3>
+					<div class="space"></div>
+					<input class="html" type="text" ng-repeat="url in model.urls track by $index" ng-model="url.path" name="doc"/>
+					<div class="insertHtmlButtons">
+						<button ng-click="AddUrlSpace()">Add Box</button>
+						<button ng-click="InsertHtmls()">Finish</button>
+						<div class="clear"></div>
+					</div>
+				</section>
+				<div class="divider"></div>
+				<section>
+					<h3>Files</h3>
+					<div class="space"></div>
+					<article ng-repeat="file in model.files">
+						<button class="remove" ng-click="RemoveClicked(file)">Remove</button><a ng-href="{{file.path}}">{{file.name}}</a>
+					</article>
+				</section>
+			</main>
+		</div>
+		<script type="text/javascript" src="includes\js\lib\angular\angular.min.js"></script>
+		<script type="text/javascript" src="includes\js\loadingOverlay.js"></script>
+		<script type="text/javascript" src="includes\js\databaseApp.js"></script>
+	</body>
+</html>

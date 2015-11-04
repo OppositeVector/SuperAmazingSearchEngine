@@ -1,0 +1,2575 @@
+listen on port 8080
+Successfully opened production db connection
+Verbose block reading:|<!DOCTYPE html>|
+found block: 15 DOCTYPE
+Verbose block reading:|
+<html lang="en" dir="ltr" class="client-nojs">|
+found block: 62 html
+Pushing html
+current tag:html
+Verbose block reading:|
+<head>|
+Pushing head
+current tag:head
+Verbose block reading:|
+<meta charset="UTF-8" />
+<title>|
+Pushing title
+current tag:title
+Verbose block reading:|Data retrieval - Wikipedia, the free encyclopedia|
+Verbose block reading:|</title>|
+Poped: title, looking for:title
+current tag:head
+Verbose block reading:|
+<script>|
+Pushing script
+current tag:script
+Scanning past:script
+Verbose block reading:|</script>|
+Poped: script, looking for:script
+current tag:head
+Finished scanning for end of script
+Verbose block reading:|
+<script>|
+Pushing script
+current tag:script
+Scanning past:script
+Verbose block reading:|</script>|
+Poped: script, looking for:script
+current tag:head
+Finished scanning for end of script
+Verbose block reading:|
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2CWatchlistBase%2CWatchlistGreenIndicators%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>|
+Pushing style
+current tag:style
+Scanning past:style
+Verbose block reading:|</style>|
+Poped: style, looking for:style
+current tag:head
+Finished scanning for end of style
+Verbose block reading:|
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector">|
+Pushing script
+current tag:script
+Scanning past:script
+Verbose block reading:|</script>|
+Poped: script, looking for:script
+current tag:head
+Finished scanning for end of script
+Verbose block reading:|
+<meta name="generator" content="MediaWiki 1.27.0-wmf.4" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Data_retrieval" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Data_retrieval&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Data_retrieval&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Data_retrieval" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]>|
+Pushing if
+current tag:if
+Verbose block reading:|<style type="text/css">|
+Pushing style
+current tag:style
+Scanning past:style
+Verbose block reading:|</style>|
+Poped: style, looking for:style
+current tag:if
+Finished scanning for end of style
+Verbose block reading:|<![endif]-->|
+Pushing endif
+current tag:endif
+Verbose block reading:|
+</head>|
+Poped: endif, looking for:head
+Poped: if, looking for:head
+Poped: head, looking for:head
+current tag:html
+Verbose block reading:|
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Data_retrieval skin-vector action-view">|
+Pushing body
+current tag:body
+Verbose block reading:|
+		<div id="mw-page-base" class="noprint">|
+Pushing div
+current tag:div
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:body
+Verbose block reading:|
+		<div id="mw-head-base" class="noprint">|
+Pushing div
+current tag:div
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:body
+Verbose block reading:|
+		<div id="content" class="mw-body" role="main">|
+Pushing div
+current tag:div
+Verbose block reading:|
+			<a id="top">|
+Pushing a
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:div
+Verbose block reading:|
+
+							<div id="siteNotice">|
+Pushing div
+current tag:div
+Verbose block reading:|<!-- CentralNotice -->|
+Pushing CentralNotice
+current tag:CentralNotice
+Verbose block reading:|</div>|
+Poped: CentralNotice, looking for:div
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+						<div class="mw-indicators">|
+Pushing div
+current tag:div
+Verbose block reading:|
+</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+			<h1 id="firstHeading" class="firstHeading" lang="en">|
+Pushing h1
+current tag:h1
+Verbose block reading:|Data|
+Verbose block reading:|retrieval|
+Verbose block reading:|</h1>|
+Poped: h1, looking for:h1
+current tag:div
+Verbose block reading:|
+									<div id="bodyContent" class="mw-body-content">|
+Pushing div
+current tag:div
+Verbose block reading:|
+									<div id="siteSub">|
+Pushing div
+current tag:div
+Verbose block reading:|From|
+Verbose block reading:|Wikipedia|
+Verbose block reading:|, the|
+Verbose block reading:|free|
+Verbose block reading:|encyclopedia|
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+								<div id="contentSub">|
+Pushing div
+current tag:div
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+												<div id="jump-to-nav" class="mw-jump">|
+Pushing div
+current tag:div
+Verbose block reading:|
+					Jump|
+Verbose block reading:|to|
+Verbose block reading:|:					<a href="#mw-head">|
+Pushing a
+current tag:a
+Verbose block reading:|navigation|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:div
+Verbose block reading:|, 					<a href="#p-search">|
+Pushing a
+current tag:a
+Verbose block reading:|search|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:div
+Verbose block reading:|
+				</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">|
+Pushing div
+current tag:div
+Verbose block reading:|<div class="hatnote">|
+Pushing div
+current tag:div
+Verbose block reading:|Not|
+Verbose block reading:|to|
+Verbose block reading:|be|
+Verbose block reading:|confused|
+Verbose block reading:|with|
+Verbose block reading:|<a href="/wiki/Information_retrieval" title="Information retrieval">|
+Pushing a
+current tag:a
+Verbose block reading:|Information|
+Verbose block reading:|retrieval|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:div
+Verbose block reading:|.</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+<p>|
+Pushing p
+current tag:p
+Verbose block reading:|<b>|
+Pushing b
+current tag:b
+Verbose block reading:|Data|
+Verbose block reading:|retrieval|
+Verbose block reading:|</b>|
+Poped: b, looking for:b
+current tag:p
+Verbose block reading:|means|
+Verbose block reading:|obtaining|
+Verbose block reading:|data|
+Verbose block reading:|from|
+Verbose block reading:|a|
+Verbose block reading:|database|
+Verbose block reading:|management|
+Verbose block reading:|system|
+Verbose block reading:|such|
+Verbose block reading:|as|
+Verbose block reading:|ODBMS|
+Verbose block reading:|. In|
+Verbose block reading:|this|
+Verbose block reading:|case|
+Verbose block reading:|, it|
+Verbose block reading:|is|
+Verbose block reading:|considered|
+Verbose block reading:|that|
+Verbose block reading:|data|
+Verbose block reading:|is|
+Verbose block reading:|represented|
+Verbose block reading:|in|
+Verbose block reading:|a|
+Verbose block reading:|structured|
+Verbose block reading:|way|
+Verbose block reading:|, and|
+Verbose block reading:|there|
+Verbose block reading:|is|
+Verbose block reading:|no|
+Verbose block reading:|ambiguity|
+Verbose block reading:|in|
+Verbose block reading:|data|
+Verbose block reading:|.</p>|
+Poped: p, looking for:p
+current tag:div
+Verbose block reading:|
+<p>|
+Pushing p
+current tag:p
+Verbose block reading:|In|
+Verbose block reading:|order|
+Verbose block reading:|to|
+Verbose block reading:|retrieve|
+Verbose block reading:|the|
+Verbose block reading:|desired|
+Verbose block reading:|data|
+Verbose block reading:|the|
+Verbose block reading:|user|
+Verbose block reading:|present|
+Verbose block reading:|a|
+Verbose block reading:|set|
+Verbose block reading:|of|
+Verbose block reading:|criteria|
+Verbose block reading:|by|
+Verbose block reading:|a|
+Verbose block reading:|query|
+Verbose block reading:|. Then|
+Verbose block reading:|the|
+Verbose block reading:|<a href="/wiki/Database_Management_System" title="Database Management System" class="mw-redirect">|
+Pushing a
+current tag:a
+Verbose block reading:|Database|
+Verbose block reading:|Management|
+Verbose block reading:|System|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:p
+Verbose block reading:|(DBMS|
+Verbose block reading:|), software|
+Verbose block reading:|for|
+Verbose block reading:|managing|
+Verbose block reading:|databases|
+Verbose block reading:|, selects|
+Verbose block reading:|the|
+Verbose block reading:|demanded|
+Verbose block reading:|data|
+Verbose block reading:|from|
+Verbose block reading:|the|
+Verbose block reading:|database|
+Verbose block reading:|. The|
+Verbose block reading:|retrieved|
+Verbose block reading:|data|
+Verbose block reading:|may|
+Verbose block reading:|be|
+Verbose block reading:|stored|
+Verbose block reading:|in|
+Verbose block reading:|a|
+Verbose block reading:|file|
+Verbose block reading:|, printed|
+Verbose block reading:|, or|
+Verbose block reading:|viewed|
+Verbose block reading:|on|
+Verbose block reading:|the|
+Verbose block reading:|screen|
+Verbose block reading:|.</p>|
+Poped: p, looking for:p
+current tag:div
+Verbose block reading:|
+<p>|
+Pushing p
+current tag:p
+Verbose block reading:|A|
+Verbose block reading:|<i>|
+Pushing i
+current tag:i
+Verbose block reading:|query|
+Verbose block reading:|language|
+Verbose block reading:|</i>|
+Poped: i, looking for:i
+current tag:p
+Verbose block reading:|, such|
+Verbose block reading:|as|
+Verbose block reading:|<i>|
+Pushing i
+current tag:i
+Verbose block reading:|<a href="/wiki/Structured_Query_Language" title="Structured Query Language" class="mw-redirect">|
+Pushing a
+current tag:a
+Verbose block reading:|Structured|
+Verbose block reading:|Query|
+Verbose block reading:|Language|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:i
+Verbose block reading:|</i>|
+Poped: i, looking for:i
+current tag:p
+Verbose block reading:|(SQL|
+Verbose block reading:|), is|
+Verbose block reading:|used|
+Verbose block reading:|to|
+Verbose block reading:|prepare|
+Verbose block reading:|the|
+Verbose block reading:|queries|
+Verbose block reading:|. SQL|
+Verbose block reading:|is|
+Verbose block reading:|an|
+Verbose block reading:|<a href="/wiki/American_National_Standards_Institute" title="American National Standards Institute">|
+Pushing a
+current tag:a
+Verbose block reading:|American|
+Verbose block reading:|National|
+Verbose block reading:|Standards|
+Verbose block reading:|Institute|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:p
+Verbose block reading:|(ANSI|
+Verbose block reading:|) standardized|
+Verbose block reading:|query|
+Verbose block reading:|language|
+Verbose block reading:|developed|
+Verbose block reading:|specifically|
+Verbose block reading:|to|
+Verbose block reading:|write|
+Verbose block reading:|database|
+Verbose block reading:|queries|
+Verbose block reading:|. Each|
+Verbose block reading:|DBMS|
+Verbose block reading:|may|
+Verbose block reading:|have|
+Verbose block reading:|its|
+Verbose block reading:|own|
+Verbose block reading:|language|
+Verbose block reading:|, but|
+Verbose block reading:|most|
+Verbose block reading:|relational|
+Verbose block reading:|DBMSs|
+Verbose block reading:|also|
+Verbose block reading:|support|
+Verbose block reading:|SQL|
+Verbose block reading:|.</p>|
+Poped: p, looking for:p
+current tag:div
+Verbose block reading:|
+<p>|
+Pushing p
+current tag:p
+Verbose block reading:|</p>|
+Poped: p, looking for:p
+current tag:div
+Verbose block reading:|
+<div id="toc" class="toc">|
+Pushing div
+current tag:div
+Verbose block reading:|
+<div id="toctitle">|
+Pushing div
+current tag:div
+Verbose block reading:|
+<h2>|
+Pushing h2
+current tag:h2
+Verbose block reading:|Contents|
+Verbose block reading:|</h2>|
+Poped: h2, looking for:h2
+current tag:div
+Verbose block reading:|
+</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+<li class="toclevel-1 tocsection-1">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="#How_the_data_is_presented">|
+Pushing a
+current tag:a
+Verbose block reading:|<span class="tocnumber">|
+Pushing span
+current tag:span
+Verbose block reading:|1|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:a
+Verbose block reading:|<span class="toctext">|
+Pushing span
+current tag:span
+Verbose block reading:|How|
+Verbose block reading:|the|
+Verbose block reading:|data|
+Verbose block reading:|is|
+Verbose block reading:|presented|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+<li class="toclevel-1 tocsection-2">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="#See_also">|
+Pushing a
+current tag:a
+Verbose block reading:|<span class="tocnumber">|
+Pushing span
+current tag:span
+Verbose block reading:|2|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:a
+Verbose block reading:|<span class="toctext">|
+Pushing span
+current tag:span
+Verbose block reading:|See|
+Verbose block reading:|also|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+<li class="toclevel-1 tocsection-3">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="#References">|
+Pushing a
+current tag:a
+Verbose block reading:|<span class="tocnumber">|
+Pushing span
+current tag:span
+Verbose block reading:|3|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:a
+Verbose block reading:|<span class="toctext">|
+Pushing span
+current tag:span
+Verbose block reading:|References|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+<li class="toclevel-1 tocsection-4">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="#External_links">|
+Pushing a
+current tag:a
+Verbose block reading:|<span class="tocnumber">|
+Pushing span
+current tag:span
+Verbose block reading:|4|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:a
+Verbose block reading:|<span class="toctext">|
+Pushing span
+current tag:span
+Verbose block reading:|External|
+Verbose block reading:|links|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+<p>|
+Pushing p
+current tag:p
+Verbose block reading:|</p>|
+Poped: p, looking for:p
+current tag:div
+Verbose block reading:|
+<h2>|
+Pushing h2
+current tag:h2
+Verbose block reading:|<span class="mw-headline" id="How_the_data_is_presented">|
+Pushing span
+current tag:span
+Verbose block reading:|How|
+Verbose block reading:|the|
+Verbose block reading:|data|
+Verbose block reading:|is|
+Verbose block reading:|presented|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:h2
+Verbose block reading:|<span class="mw-editsection">|
+Pushing span
+current tag:span
+Verbose block reading:|<span class="mw-editsection-bracket">|
+Pushing span
+current tag:span
+Verbose block reading:|[</span>|
+Poped: span, looking for:span
+current tag:span
+Verbose block reading:|<a href="/w/index.php?title=Data_retrieval&amp;action=edit&amp;section=1" title="Edit section: How the data is presented">|
+Pushing a
+current tag:a
+Verbose block reading:|edit|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|<span class="mw-editsection-bracket">|
+Pushing span
+current tag:span
+Verbose block reading:|]</span>|
+Poped: span, looking for:span
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:h2
+Verbose block reading:|</h2>|
+Poped: h2, looking for:h2
+current tag:div
+Verbose block reading:|
+<p>|
+Pushing p
+current tag:p
+Verbose block reading:|Reports|
+Verbose block reading:|and|
+Verbose block reading:|queries|
+Verbose block reading:|are|
+Verbose block reading:|the|
+Verbose block reading:|two|
+Verbose block reading:|primary|
+Verbose block reading:|forms|
+Verbose block reading:|of|
+Verbose block reading:|the|
+Verbose block reading:|retrieved|
+Verbose block reading:|data|
+Verbose block reading:|from|
+Verbose block reading:|a|
+Verbose block reading:|database|
+Verbose block reading:|. There|
+Verbose block reading:|are|
+Verbose block reading:|some|
+Verbose block reading:|overlaps|
+Verbose block reading:|between|
+Verbose block reading:|them|
+Verbose block reading:|, but|
+Verbose block reading:|queries|
+Verbose block reading:|generally|
+Verbose block reading:|select|
+Verbose block reading:|a|
+Verbose block reading:|relatively|
+Verbose block reading:|small|
+Verbose block reading:|portion|
+Verbose block reading:|of|
+Verbose block reading:|the|
+Verbose block reading:|database|
+Verbose block reading:|, while|
+Verbose block reading:|reports|
+Verbose block reading:|show|
+Verbose block reading:|larger|
+Verbose block reading:|amounts|
+Verbose block reading:|of|
+Verbose block reading:|data|
+Verbose block reading:|. Queries|
+Verbose block reading:|also|
+Verbose block reading:|present|
+Verbose block reading:|the|
+Verbose block reading:|data|
+Verbose block reading:|in|
+Verbose block reading:|a|
+Verbose block reading:|standard|
+Verbose block reading:|format|
+Verbose block reading:|and|
+Verbose block reading:|usually|
+Verbose block reading:|display|
+Verbose block reading:|it|
+Verbose block reading:|on|
+Verbose block reading:|the|
+Verbose block reading:|monitor|
+Verbose block reading:|; whereas|
+Verbose block reading:|reports|
+Verbose block reading:|allow|
+Verbose block reading:|formatting|
+Verbose block reading:|of|
+Verbose block reading:|the|
+Verbose block reading:|output|
+Verbose block reading:|however|
+Verbose block reading:|you|
+Verbose block reading:|like|
+Verbose block reading:|and|
+Verbose block reading:|is|
+Verbose block reading:|normally|
+Verbose block reading:|printed|
+Verbose block reading:|.</p>|
+Poped: p, looking for:p
+current tag:div
+Verbose block reading:|
+<p>|
+Pushing p
+current tag:p
+Verbose block reading:|Reports|
+Verbose block reading:|are|
+Verbose block reading:|designed|
+Verbose block reading:|using|
+Verbose block reading:|a|
+Verbose block reading:|report|
+Verbose block reading:|generator|
+Verbose block reading:|built|
+Verbose block reading:|into|
+Verbose block reading:|the|
+Verbose block reading:|DBMS|
+Verbose block reading:|.</p>|
+Poped: p, looking for:p
+current tag:div
+Verbose block reading:|
+<h2>|
+Pushing h2
+current tag:h2
+Verbose block reading:|<span class="mw-headline" id="See_also">|
+Pushing span
+current tag:span
+Verbose block reading:|See|
+Verbose block reading:|also|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:h2
+Verbose block reading:|<span class="mw-editsection">|
+Pushing span
+current tag:span
+Verbose block reading:|<span class="mw-editsection-bracket">|
+Pushing span
+current tag:span
+Verbose block reading:|[</span>|
+Poped: span, looking for:span
+current tag:span
+Verbose block reading:|<a href="/w/index.php?title=Data_retrieval&amp;action=edit&amp;section=2" title="Edit section: See also">|
+Pushing a
+current tag:a
+Verbose block reading:|edit|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|<span class="mw-editsection-bracket">|
+Pushing span
+current tag:span
+Verbose block reading:|]</span>|
+Poped: span, looking for:span
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:h2
+Verbose block reading:|</h2>|
+Poped: h2, looking for:h2
+current tag:div
+Verbose block reading:|
+<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Database_model" title="Database model">|
+Pushing a
+current tag:a
+Verbose block reading:|Database|
+Verbose block reading:|model|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Data_maintenance" title="Data maintenance" class="mw-redirect">|
+Pushing a
+current tag:a
+Verbose block reading:|Data|
+Verbose block reading:|maintenance|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Relational_database" title="Relational database">|
+Pushing a
+current tag:a
+Verbose block reading:|Relational|
+Verbose block reading:|database|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Query_by_Example" title="Query by Example">|
+Pushing a
+current tag:a
+Verbose block reading:|Query|
+Verbose block reading:|by|
+Verbose block reading:|Example|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+<h2>|
+Pushing h2
+current tag:h2
+Verbose block reading:|<span class="mw-headline" id="References">|
+Pushing span
+current tag:span
+Verbose block reading:|References|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:h2
+Verbose block reading:|<span class="mw-editsection">|
+Pushing span
+current tag:span
+Verbose block reading:|<span class="mw-editsection-bracket">|
+Pushing span
+current tag:span
+Verbose block reading:|[</span>|
+Poped: span, looking for:span
+current tag:span
+Verbose block reading:|<a href="/w/index.php?title=Data_retrieval&amp;action=edit&amp;section=3" title="Edit section: References">|
+Pushing a
+current tag:a
+Verbose block reading:|edit|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|<span class="mw-editsection-bracket">|
+Pushing span
+current tag:span
+Verbose block reading:|]</span>|
+Poped: span, looking for:span
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:h2
+Verbose block reading:|</h2>|
+Poped: h2, looking for:h2
+current tag:div
+Verbose block reading:|
+<table class="metadata plainlinks ambox ambox-style ambox-No_footnotes" role="presentation">|
+Pushing table
+current tag:table
+Verbose block reading:|
+<tr>|
+Pushing tr
+current tag:tr
+Verbose block reading:|
+<td class="mbox-image">|
+Pushing td
+current tag:td
+Verbose block reading:|
+<div style="width:52px">|
+Pushing div
+current tag:div
+Verbose block reading:|<img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div>|
+Poped: div, looking for:div
+current tag:td
+Verbose block reading:|
+</td>|
+Poped: td, looking for:td
+current tag:tr
+Verbose block reading:|
+<td class="mbox-text">|
+Pushing td
+current tag:td
+Verbose block reading:|<span class="mbox-text-span">|
+Pushing span
+current tag:span
+Verbose block reading:|This|
+Verbose block reading:|section|
+Verbose block reading:|includes|
+Verbose block reading:|a|
+Verbose block reading:|<a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">|
+Pushing a
+current tag:a
+Verbose block reading:|list|
+Verbose block reading:|of|
+Verbose block reading:|references|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|, related|
+Verbose block reading:|reading|
+Verbose block reading:|or|
+Verbose block reading:|<a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">|
+Pushing a
+current tag:a
+Verbose block reading:|external|
+Verbose block reading:|links|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|, <b>|
+Pushing b
+current tag:b
+Verbose block reading:|but|
+Verbose block reading:|the|
+Verbose block reading:|sources|
+Verbose block reading:|of|
+Verbose block reading:|this|
+Verbose block reading:|section|
+Verbose block reading:|remain|
+Verbose block reading:|unclear|
+Verbose block reading:|because|
+Verbose block reading:|it|
+Verbose block reading:|lacks|
+Verbose block reading:|<a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">|
+Pushing a
+current tag:a
+Verbose block reading:|inline|
+Verbose block reading:|citations|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:b
+Verbose block reading:|</b>|
+Poped: b, looking for:b
+current tag:span
+Verbose block reading:|. <span class="hide-when-compact">|
+Pushing span
+current tag:span
+Verbose block reading:|Please|
+Verbose block reading:|<a href="/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" title="Wikipedia:WikiProject Fact and Reference Check">|
+Pushing a
+current tag:a
+Verbose block reading:|improve|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|this|
+Verbose block reading:|article|
+Verbose block reading:|by|
+Verbose block reading:|introducing|
+Verbose block reading:|more|
+Verbose block reading:|precise|
+Verbose block reading:|citations|
+Verbose block reading:|.</span>|
+Poped: span, looking for:span
+current tag:span
+Verbose block reading:|<small>|
+Pushing small
+current tag:small
+Verbose block reading:|<i>|
+Pushing i
+current tag:i
+Verbose block reading:|(February|
+Verbose block reading:|2011|
+Verbose block reading:|)</i>|
+Poped: i, looking for:i
+current tag:small
+Verbose block reading:|</small>|
+Poped: small, looking for:small
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:td
+Verbose block reading:|</td>|
+Poped: td, looking for:td
+current tag:tr
+Verbose block reading:|
+</tr>|
+Poped: tr, looking for:tr
+current tag:table
+Verbose block reading:|
+</table>|
+Poped: table, looking for:table
+current tag:div
+Verbose block reading:|
+<div class="reflist" style="list-style-type: decimal;">|
+Pushing div
+current tag:div
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<cite class="citation book">|
+Pushing cite
+current tag:cite
+Scanning past:cite
+Verbose block reading:|<i>|
+Pushing i
+current tag:i
+Verbose block reading:|</i>|
+Poped: i, looking for:i
+current tag:cite
+Verbose block reading:|<a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">|
+Pushing a
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:cite
+Verbose block reading:|<a href="/wiki/Special:BookSources/0-13-122723-8" title="Special:BookSources/0-13-122723-8">|
+Pushing a
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:cite
+Verbose block reading:|</cite>|
+Poped: cite, looking for:cite
+current tag:li
+Finished scanning for end of cite
+Verbose block reading:|<span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+retrieval&amp;rft.aufirst=H.+L.&amp;rft.au=J.+A.+Johnson&amp;rft.aulast=Capron&amp;rft.btitle=Computers%3A+Tools+for+an+Information+Age&amp;rft.date=2004&amp;rft.edition=8&amp;rft.genre=book&amp;rft.isbn=0-13-122723-8&amp;rft.pub=Pearson%2FPrentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988">|
+Pushing span
+current tag:span
+Verbose block reading:|<span style="display:none;">|
+Pushing span
+current tag:span
+Verbose block reading:|&#160;</span>|
+Poped: span, looking for:span
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<cite class="citation book">|
+Pushing cite
+current tag:cite
+Scanning past:cite
+Verbose block reading:|<i>|
+Pushing i
+current tag:i
+Verbose block reading:|</i>|
+Poped: i, looking for:i
+current tag:cite
+Verbose block reading:|<a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">|
+Pushing a
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:cite
+Verbose block reading:|<a href="/wiki/Special:BookSources/91-44-04449-6" title="Special:BookSources/91-44-04449-6">|
+Pushing a
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:cite
+Verbose block reading:|</cite>|
+Poped: cite, looking for:cite
+current tag:li
+Finished scanning for end of cite
+Verbose block reading:|<span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+retrieval&amp;rft.aufirst=Thomas&amp;rft.aulast=Padron-McCarthy&amp;rft.au=Tore+Risch&amp;rft.btitle=Databasteknik&amp;rft.date=2005&amp;rft.genre=book&amp;rft.isbn=91-44-04449-6&amp;rft.pub=Studentlitteratur&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988">|
+Pushing span
+current tag:span
+Verbose block reading:|<span style="display:none;">|
+Pushing span
+current tag:span
+Verbose block reading:|&#160;</span>|
+Poped: span, looking for:span
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+<h2>|
+Pushing h2
+current tag:h2
+Verbose block reading:|<span class="mw-headline" id="External_links">|
+Pushing span
+current tag:span
+Verbose block reading:|External|
+Verbose block reading:|links|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:h2
+Verbose block reading:|<span class="mw-editsection">|
+Pushing span
+current tag:span
+Verbose block reading:|<span class="mw-editsection-bracket">|
+Pushing span
+current tag:span
+Verbose block reading:|[</span>|
+Poped: span, looking for:span
+current tag:span
+Verbose block reading:|<a href="/w/index.php?title=Data_retrieval&amp;action=edit&amp;section=4" title="Edit section: External links">|
+Pushing a
+current tag:a
+Verbose block reading:|edit|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|<span class="mw-editsection-bracket">|
+Pushing span
+current tag:span
+Verbose block reading:|]</span>|
+Poped: span, looking for:span
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:h2
+Verbose block reading:|</h2>|
+Poped: h2, looking for:h2
+current tag:div
+Verbose block reading:|
+<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<a rel="nofollow" class="external text" href="http://www.sql-statements.com/">|
+Pushing a
+current tag:a
+Verbose block reading:|SQL|
+Verbose block reading:|Statements|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|SQL|
+Verbose block reading:|Statements|
+Verbose block reading:|Tutorial|
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<a rel="nofollow" class="external text" href="http://w3schools.com/sql/">|
+Pushing a
+current tag:a
+Verbose block reading:|SQL|
+Verbose block reading:|Tutorial|
+Verbose block reading:|at|
+Verbose block reading:|W3Schools|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1101
+Cached time: 20151026212613
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.129 seconds
+Real time usage: 0.169 seconds
+Preprocessor visited node count: 211/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 6667/2097152 bytes
+Template argument size: 97/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 1/500
+Lua time usage: 0.045/10.000 seconds
+Lua memory usage: 1.83 MB/50 MB
+Number of Wikibase entities loaded: 0-->|
+Pushing NewPP
+current tag:NewPP
+Verbose block reading:|
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  116.706      1 - -total
+ 38.67%   45.133      1 - Template:No_footnotes
+ 32.22%   37.606      1 - Template:Ambox
+ 30.72%   35.856      2 - Template:Cite_book
+ 26.97%   31.473      1 - Template:Distinguish
+ 24.40%   28.477      1 - Template:Hatnote
+  3.06%    3.566      1 - Template:Reflist
+  1.95%    2.273      1 - Template:Trim
+-->|
+Pushing Transclusion
+current tag:Transclusion
+Verbose block reading:|
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:28688670-0!*!0!!en!4!* and timestamp 20151026212613 and revision id 646235746
+ -->|
+Pushing Saved
+current tag:Saved
+Verbose block reading:|
+<noscript>|
+Pushing noscript
+current tag:noscript
+Verbose block reading:|<img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>|
+Poped: noscript, looking for:noscript
+current tag:Saved
+Verbose block reading:|</div>|
+Poped: Saved, looking for:div
+Poped: Transclusion, looking for:div
+Poped: NewPP, looking for:div
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|					<div class="printfooter">|
+Pushing div
+current tag:div
+Verbose block reading:|
+						Retrieved|
+Verbose block reading:|from|
+Verbose block reading:|"<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Data_retrieval&amp;oldid=646235746">|
+Pushing a
+current tag:a
+Verbose block reading:|https|
+Verbose block reading:|://en|
+Verbose block reading:|.wikipedia|
+Verbose block reading:|.org|
+Verbose block reading:|/w|
+Verbose block reading:|/index|
+Verbose block reading:|.php|
+Verbose block reading:|?title|
+Verbose block reading:|=Data|
+Verbose block reading:|_retrieval|
+Verbose block reading:|&amp;oldid|
+Verbose block reading:|=646235746|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:div
+Verbose block reading:|"					</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+				<div id='catlinks' class='catlinks'>|
+Pushing div
+current tag:div
+Verbose block reading:|<div id="mw-normal-catlinks" class="mw-normal-catlinks">|
+Pushing div
+current tag:div
+Verbose block reading:|<a href="/wiki/Help:Category" title="Help:Category">|
+Pushing a
+current tag:a
+Verbose block reading:|Categories|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:div
+Verbose block reading:|: <ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Category:Database_management_systems" title="Category:Database management systems">|
+Pushing a
+current tag:a
+Verbose block reading:|Database|
+Verbose block reading:|management|
+Verbose block reading:|systems|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Category:Relational_database_management_systems" title="Category:Relational database management systems">|
+Pushing a
+current tag:a
+Verbose block reading:|Relational|
+Verbose block reading:|database|
+Verbose block reading:|management|
+Verbose block reading:|systems|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|<div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">|
+Pushing div
+current tag:div
+Verbose block reading:|Hidden|
+Verbose block reading:|categories|
+Verbose block reading:|: <ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Category:Articles_lacking_in-text_citations_from_February_2011" title="Category:Articles lacking in-text citations from February 2011">|
+Pushing a
+current tag:a
+Verbose block reading:|Articles|
+Verbose block reading:|lacking|
+Verbose block reading:|in|
+Verbose block reading:|-text|
+Verbose block reading:|citations|
+Verbose block reading:|from|
+Verbose block reading:|February|
+Verbose block reading:|2011|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li>|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">|
+Pushing a
+current tag:a
+Verbose block reading:|All|
+Verbose block reading:|articles|
+Verbose block reading:|lacking|
+Verbose block reading:|in|
+Verbose block reading:|-text|
+Verbose block reading:|citations|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|				<div class="visualClear">|
+Pushing div
+current tag:div
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+							</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+		</div>|
+Poped: div, looking for:div
+current tag:body
+Verbose block reading:|
+		<div id="mw-navigation">|
+Pushing div
+current tag:div
+Verbose block reading:|
+			<h2>|
+Pushing h2
+current tag:h2
+Verbose block reading:|Navigation|
+Verbose block reading:|menu|
+Verbose block reading:|</h2>|
+Poped: h2, looking for:h2
+current tag:div
+Verbose block reading:|
+
+			<div id="mw-head">|
+Pushing div
+current tag:div
+Verbose block reading:|
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">|
+Pushing div
+current tag:div
+Verbose block reading:|
+						<h3 id="p-personal-label">|
+Pushing h3
+current tag:h3
+Verbose block reading:|Personal|
+Verbose block reading:|tools|
+Verbose block reading:|</h3>|
+Poped: h3, looking for:h3
+current tag:div
+Verbose block reading:|
+						<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+							<li id="pt-createaccount">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/w/index.php?title=Special:UserLogin&amp;returnto=Data+retrieval&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">|
+Pushing a
+current tag:a
+Verbose block reading:|Create|
+Verbose block reading:|account|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="pt-login">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/w/index.php?title=Special:UserLogin&amp;returnto=Data+retrieval" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">|
+Pushing a
+current tag:a
+Verbose block reading:|Log|
+Verbose block reading:|in|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|						</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+					</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+									<div id="left-navigation">|
+Pushing div
+current tag:div
+Verbose block reading:|
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">|
+Pushing div
+current tag:div
+Verbose block reading:|
+						<h3 id="p-namespaces-label">|
+Pushing h3
+current tag:h3
+Verbose block reading:|Namespaces|
+Verbose block reading:|</h3>|
+Poped: h3, looking for:h3
+current tag:div
+Verbose block reading:|
+						<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+															<li  id="ca-nstab-main" class="selected">|
+Pushing li
+current tag:li
+Verbose block reading:|<span>|
+Pushing span
+current tag:span
+Verbose block reading:|<a href="/wiki/Data_retrieval"  title="View the content page [c]" accesskey="c">|
+Pushing a
+current tag:a
+Verbose block reading:|Article|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+															<li  id="ca-talk">|
+Pushing li
+current tag:li
+Verbose block reading:|<span>|
+Pushing span
+current tag:span
+Verbose block reading:|<a href="/wiki/Talk:Data_retrieval"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">|
+Pushing a
+current tag:a
+Verbose block reading:|Talk|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+													</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+					</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">|
+Pushing div
+current tag:div
+Verbose block reading:|
+												<h3 id="p-variants-label">|
+Pushing h3
+current tag:h3
+Verbose block reading:|
+							<span>|
+Pushing span
+current tag:span
+Verbose block reading:|Variants|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:h3
+Verbose block reading:|<a href="#">|
+Pushing a
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:h3
+Verbose block reading:|
+						</h3>|
+Poped: h3, looking for:h3
+current tag:div
+Verbose block reading:|
+
+						<div class="menu">|
+Pushing div
+current tag:div
+Verbose block reading:|
+							<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+															</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+						</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+					</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+									</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+				<div id="right-navigation">|
+Pushing div
+current tag:div
+Verbose block reading:|
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">|
+Pushing div
+current tag:div
+Verbose block reading:|
+						<h3 id="p-views-label">|
+Pushing h3
+current tag:h3
+Verbose block reading:|Views|
+Verbose block reading:|</h3>|
+Poped: h3, looking for:h3
+current tag:div
+Verbose block reading:|
+						<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+															<li id="ca-view" class="selected">|
+Pushing li
+current tag:li
+Verbose block reading:|<span>|
+Pushing span
+current tag:span
+Verbose block reading:|<a href="/wiki/Data_retrieval" >|
+Pushing a
+current tag:a
+Verbose block reading:|Read|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+															<li id="ca-edit">|
+Pushing li
+current tag:li
+Verbose block reading:|<span>|
+Pushing span
+current tag:span
+Verbose block reading:|<a href="/w/index.php?title=Data_retrieval&amp;action=edit"  title="Edit this page [e]" accesskey="e">|
+Pushing a
+current tag:a
+Verbose block reading:|Edit|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+															<li id="ca-history" class="collapsible">|
+Pushing li
+current tag:li
+Verbose block reading:|<span>|
+Pushing span
+current tag:span
+Verbose block reading:|<a href="/w/index.php?title=Data_retrieval&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">|
+Pushing a
+current tag:a
+Verbose block reading:|View|
+Verbose block reading:|history|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+													</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+					</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">|
+Pushing div
+current tag:div
+Verbose block reading:|
+						<h3 id="p-cactions-label">|
+Pushing h3
+current tag:h3
+Verbose block reading:|<span>|
+Pushing span
+current tag:span
+Verbose block reading:|More|
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:h3
+Verbose block reading:|<a href="#">|
+Pushing a
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:h3
+Verbose block reading:|</h3>|
+Poped: h3, looking for:h3
+current tag:div
+Verbose block reading:|
+
+						<div class="menu">|
+Pushing div
+current tag:div
+Verbose block reading:|
+							<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+															</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+						</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+					</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+										<div id="p-search" role="search">|
+Pushing div
+current tag:div
+Verbose block reading:|
+						<h3>|
+Pushing h3
+current tag:h3
+Verbose block reading:|
+							<label for="searchInput">|
+Pushing label
+current tag:label
+Verbose block reading:|Search|
+Verbose block reading:|</label>|
+Poped: label, looking for:label
+current tag:h3
+Verbose block reading:|
+						</h3>|
+Poped: h3, looking for:h3
+current tag:div
+Verbose block reading:|
+
+						<form action="/w/index.php" id="searchform">|
+Pushing form
+current tag:form
+Verbose block reading:|
+							<div id="simpleSearch">|
+Pushing div
+current tag:div
+Verbose block reading:|
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>|
+Poped: div, looking for:div
+current tag:form
+Verbose block reading:|
+						</form>|
+Poped: form, looking for:form
+current tag:div
+Verbose block reading:|
+					</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+									</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+			</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+			<div id="mw-panel">|
+Pushing div
+current tag:div
+Verbose block reading:|
+				<div id="p-logo" role="banner">|
+Pushing div
+current tag:div
+Verbose block reading:|<a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page">|
+Pushing a
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:div
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>|
+Pushing div
+current tag:div
+Verbose block reading:|
+			<h3 id='p-navigation-label'>|
+Pushing h3
+current tag:h3
+Verbose block reading:|Navigation|
+Verbose block reading:|</h3>|
+Poped: h3, looking for:h3
+current tag:div
+Verbose block reading:|
+
+			<div class="body">|
+Pushing div
+current tag:div
+Verbose block reading:|
+									<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+						<li id="n-mainpage-description">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">|
+Pushing a
+current tag:a
+Verbose block reading:|Main|
+Verbose block reading:|page|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="n-contents">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">|
+Pushing a
+current tag:a
+Verbose block reading:|Contents|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="n-featuredcontent">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">|
+Pushing a
+current tag:a
+Verbose block reading:|Featured|
+Verbose block reading:|content|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="n-currentevents">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Portal:Current_events" title="Find background information on current events">|
+Pushing a
+current tag:a
+Verbose block reading:|Current|
+Verbose block reading:|events|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="n-randompage">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">|
+Pushing a
+current tag:a
+Verbose block reading:|Random|
+Verbose block reading:|article|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="n-sitesupport">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">|
+Pushing a
+current tag:a
+Verbose block reading:|Donate|
+Verbose block reading:|to|
+Verbose block reading:|Wikipedia|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="n-shoplink">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="//shop.wikimedia.org" title="Visit the Wikipedia store">|
+Pushing a
+current tag:a
+Verbose block reading:|Wikipedia|
+Verbose block reading:|store|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|					</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+							</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+		</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>|
+Pushing div
+current tag:div
+Verbose block reading:|
+			<h3 id='p-interaction-label'>|
+Pushing h3
+current tag:h3
+Verbose block reading:|Interaction|
+Verbose block reading:|</h3>|
+Poped: h3, looking for:h3
+current tag:div
+Verbose block reading:|
+
+			<div class="body">|
+Pushing div
+current tag:div
+Verbose block reading:|
+									<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+						<li id="n-help">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">|
+Pushing a
+current tag:a
+Verbose block reading:|Help|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="n-aboutsite">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">|
+Pushing a
+current tag:a
+Verbose block reading:|About|
+Verbose block reading:|Wikipedia|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="n-portal">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">|
+Pushing a
+current tag:a
+Verbose block reading:|Community|
+Verbose block reading:|portal|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="n-recentchanges">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">|
+Pushing a
+current tag:a
+Verbose block reading:|Recent|
+Verbose block reading:|changes|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="n-contactpage">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">|
+Pushing a
+current tag:a
+Verbose block reading:|Contact|
+Verbose block reading:|page|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|					</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+							</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+		</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>|
+Pushing div
+current tag:div
+Verbose block reading:|
+			<h3 id='p-tb-label'>|
+Pushing h3
+current tag:h3
+Verbose block reading:|Tools|
+Verbose block reading:|</h3>|
+Poped: h3, looking for:h3
+current tag:div
+Verbose block reading:|
+
+			<div class="body">|
+Pushing div
+current tag:div
+Verbose block reading:|
+									<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+						<li id="t-whatlinkshere">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Special:WhatLinksHere/Data_retrieval" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">|
+Pushing a
+current tag:a
+Verbose block reading:|What|
+Verbose block reading:|links|
+Verbose block reading:|here|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="t-recentchangeslinked">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Special:RecentChangesLinked/Data_retrieval" title="Recent changes in pages linked from this page [k]" accesskey="k">|
+Pushing a
+current tag:a
+Verbose block reading:|Related|
+Verbose block reading:|changes|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="t-upload">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">|
+Pushing a
+current tag:a
+Verbose block reading:|Upload|
+Verbose block reading:|file|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="t-specialpages">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">|
+Pushing a
+current tag:a
+Verbose block reading:|Special|
+Verbose block reading:|pages|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="t-permalink">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/w/index.php?title=Data_retrieval&amp;oldid=646235746" title="Permanent link to this revision of the page">|
+Pushing a
+current tag:a
+Verbose block reading:|Permanent|
+Verbose block reading:|link|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="t-info">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/w/index.php?title=Data_retrieval&amp;action=info" title="More information about this page">|
+Pushing a
+current tag:a
+Verbose block reading:|Page|
+Verbose block reading:|information|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="t-wikibase">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="//www.wikidata.org/wiki/Q5227344" title="Link to connected data repository item [g]" accesskey="g">|
+Pushing a
+current tag:a
+Verbose block reading:|Wikidata|
+Verbose block reading:|item|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="t-cite">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/w/index.php?title=Special:CiteThisPage&amp;page=Data_retrieval&amp;id=646235746" title="Information on how to cite this page">|
+Pushing a
+current tag:a
+Verbose block reading:|Cite|
+Verbose block reading:|this|
+Verbose block reading:|page|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|					</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+							</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+		</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>|
+Pushing div
+current tag:div
+Verbose block reading:|
+			<h3 id='p-coll-print_export-label'>|
+Pushing h3
+current tag:h3
+Verbose block reading:|Print|
+Verbose block reading:|/export|
+Verbose block reading:|</h3>|
+Poped: h3, looking for:h3
+current tag:div
+Verbose block reading:|
+
+			<div class="body">|
+Pushing div
+current tag:div
+Verbose block reading:|
+									<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+						<li id="coll-create_a_book">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Data+retrieval">|
+Pushing a
+current tag:a
+Verbose block reading:|Create|
+Verbose block reading:|a|
+Verbose block reading:|book|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="coll-download-as-rdf2latex">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Data+retrieval&amp;returnto=Data+retrieval&amp;oldid=646235746&amp;writer=rdf2latex">|
+Pushing a
+current tag:a
+Verbose block reading:|Download|
+Verbose block reading:|as|
+Verbose block reading:|PDF|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|<li id="t-print">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/w/index.php?title=Data_retrieval&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">|
+Pushing a
+current tag:a
+Verbose block reading:|Printable|
+Verbose block reading:|version|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|					</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+							</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+		</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>|
+Pushing div
+current tag:div
+Verbose block reading:|
+			<h3 id='p-lang-label'>|
+Pushing h3
+current tag:h3
+Verbose block reading:|Languages|
+Verbose block reading:|</h3>|
+Poped: h3, looking for:h3
+current tag:div
+Verbose block reading:|
+
+			<div class="body">|
+Pushing div
+current tag:div
+Verbose block reading:|
+									<ul>|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+						<li class="uls-p-lang-dummy">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="#">|
+Pushing a
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|					</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+				<div class='after-portlet after-portlet-lang'>|
+Pushing div
+current tag:div
+Verbose block reading:|<span class="wb-langlinks-add wb-langlinks-link">|
+Pushing span
+current tag:span
+Verbose block reading:|<a href="//www.wikidata.org/wiki/Q5227344#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">|
+Pushing a
+current tag:a
+Verbose block reading:|Add|
+Verbose block reading:|links|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:span
+Verbose block reading:|</span>|
+Poped: span, looking for:span
+current tag:div
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|			</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+		</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+				</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+		</div>|
+Poped: div, looking for:div
+current tag:body
+Verbose block reading:|
+		<div id="footer" role="contentinfo">|
+Pushing div
+current tag:div
+Verbose block reading:|
+							<ul id="footer-info">|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+											<li id="footer-info-lastmod">|
+Pushing li
+current tag:li
+Verbose block reading:|This|
+Verbose block reading:|page|
+Verbose block reading:|was|
+Verbose block reading:|last|
+Verbose block reading:|modified|
+Verbose block reading:|on|
+Verbose block reading:|8|
+Verbose block reading:|February|
+Verbose block reading:|2015|
+Verbose block reading:|, at|
+Verbose block reading:|20|
+Verbose block reading:|:32|
+Verbose block reading:|.</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+											<li id="footer-info-copyright">|
+Pushing li
+current tag:li
+Verbose block reading:|Text|
+Verbose block reading:|is|
+Verbose block reading:|available|
+Verbose block reading:|under|
+Verbose block reading:|the|
+Verbose block reading:|<a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">|
+Pushing a
+current tag:a
+Verbose block reading:|Creative|
+Verbose block reading:|Commons|
+Verbose block reading:|Attribution|
+Verbose block reading:|-ShareAlike|
+Verbose block reading:|License|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|<a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;">|
+Pushing a
+current tag:a
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|;
+additional|
+Verbose block reading:|terms|
+Verbose block reading:|may|
+Verbose block reading:|apply|
+Verbose block reading:|.  By|
+Verbose block reading:|using|
+Verbose block reading:|this|
+Verbose block reading:|site|
+Verbose block reading:|, you|
+Verbose block reading:|agree|
+Verbose block reading:|to|
+Verbose block reading:|the|
+Verbose block reading:|<a href="//wikimediafoundation.org/wiki/Terms_of_Use">|
+Pushing a
+current tag:a
+Verbose block reading:|Terms|
+Verbose block reading:|of|
+Verbose block reading:|Use|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|and|
+Verbose block reading:|<a href="//wikimediafoundation.org/wiki/Privacy_policy">|
+Pushing a
+current tag:a
+Verbose block reading:|Privacy|
+Verbose block reading:|Policy|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|. Wikipedia|
+Verbose block reading:|® is|
+Verbose block reading:|a|
+Verbose block reading:|registered|
+Verbose block reading:|trademark|
+Verbose block reading:|of|
+Verbose block reading:|the|
+Verbose block reading:|<a href="//www.wikimediafoundation.org/">|
+Pushing a
+current tag:a
+Verbose block reading:|Wikimedia|
+Verbose block reading:|Foundation|
+Verbose block reading:|, Inc|
+Verbose block reading:|.</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|, a|
+Verbose block reading:|non|
+Verbose block reading:|-profit|
+Verbose block reading:|organization|
+Verbose block reading:|.</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+									</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+							<ul id="footer-places">|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+											<li id="footer-places-privacy">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">|
+Pushing a
+current tag:a
+Verbose block reading:|Privacy|
+Verbose block reading:|policy|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+											<li id="footer-places-about">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Wikipedia:About" title="Wikipedia:About">|
+Pushing a
+current tag:a
+Verbose block reading:|About|
+Verbose block reading:|Wikipedia|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+											<li id="footer-places-disclaimer">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">|
+Pushing a
+current tag:a
+Verbose block reading:|Disclaimers|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+											<li id="footer-places-contact">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">|
+Pushing a
+current tag:a
+Verbose block reading:|Contact|
+Verbose block reading:|Wikipedia|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+											<li id="footer-places-developers">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">|
+Pushing a
+current tag:a
+Verbose block reading:|Developers|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+											<li id="footer-places-mobileview">|
+Pushing li
+current tag:li
+Verbose block reading:|<a href="//en.m.wikipedia.org/w/index.php?title=Data_retrieval&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">|
+Pushing a
+current tag:a
+Verbose block reading:|Mobile|
+Verbose block reading:|view|
+Verbose block reading:|</a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+									</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+										<ul id="footer-icons" class="noprint">|
+Pushing ul
+current tag:ul
+Verbose block reading:|
+											<li id="footer-copyrightico">|
+Pushing li
+current tag:li
+Verbose block reading:|
+							<a href="//wikimediafoundation.org/">|
+Pushing a
+current tag:a
+Verbose block reading:|<img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|						</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+											<li id="footer-poweredbyico">|
+Pushing li
+current tag:li
+Verbose block reading:|
+							<a href="//www.mediawiki.org/">|
+Pushing a
+current tag:a
+Verbose block reading:|<img src="/static/1.27.0-wmf.4/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.27.0-wmf.4/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.27.0-wmf.4/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>|
+Poped: a, looking for:a
+current tag:li
+Verbose block reading:|						</li>|
+Poped: li, looking for:li
+current tag:ul
+Verbose block reading:|
+									</ul>|
+Poped: ul, looking for:ul
+current tag:div
+Verbose block reading:|
+						<div style="clear:both">|
+Pushing div
+current tag:div
+Verbose block reading:|</div>|
+Poped: div, looking for:div
+current tag:div
+Verbose block reading:|
+		</div>|
+Poped: div, looking for:div
+current tag:body
+Verbose block reading:|
+		<script>|
+Pushing script
+current tag:script
+Scanning past:script
+Verbose block reading:|</script>|
+Poped: script, looking for:script
+current tag:body
+Finished scanning for end of script
+Verbose block reading:|<script>|
+Pushing script
+current tag:script
+Scanning past:script
+Verbose block reading:|</script>|
+Poped: script, looking for:script
+current tag:body
+Finished scanning for end of script
+Verbose block reading:|
+	</body>|
+Poped: body, looking for:body
+current tag:html
+Verbose block reading:|
+</html>|
+Poped: html, looking for:html

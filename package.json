@@ -9,8 +9,10 @@
   "author": "Victor Belski and Niv Levy",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "mongoose": "^4.1.12",
-    "multer": "^1.0.6"
+    "multer": "^1.0.6",
+    "request": "^2.65.0"
   }
 }

@@ -1,24 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="searchApp">
 	<head>
-		<title>Upload form</title>
-		<link rel = "stylesheet" href = "includes/style.css">
-		<script type="text/javascript" src="includes/jquery-2.1.1.min.js"></script>
+		<title>Super Amazing Search Engine</title>
+		<link rel = "stylesheet" href = "css/style.css">
+		<script type="text/javascript" src="includes/js/lib/jquery/jquery-2.1.1.min.js"></script>
 	</head>
 
-	<body>
+	<bodng ng-controller="BodyController">
+		<!--<button ng-click="Obscure()">Obscure</button>
+		<button ng-click="Clear()" style="z-index: 9999;">Clear</button>-->
 		<div class="wrapper">
-			<header>
-				<h1>Upload dialog</h1>
-			</header>
-			<main>
-				<h3>Form</h3>
-				<form action="../submit" method="POST" enctype="multipart/form-data">
-					<input type="file" name="doc">
-					<input type="submit">
-				</form>
-			</main>
-		
+		<header>
+			<section>
+				<a id="manage" href="../manage">Manage</a>
+				<a id="logo" href="http://superamazingseachengine.herokuapp.com"></a>
+			</section>
+			<section>
+				<input ng-model="model.searchQuery" type="search" name="userSearch" placeholder="Search Documents">
+				<button ng-click="SearchClicked()">Search</button>
+				<div class="clear"></div>
+			</section>
+		</header>
+		<div class="divider"></div>
+		<main>
+			<article ng-repeat="ans in model.answers">
+				<h3>{{ans.str}}</h3>
+			</article>
+			<article ng-repeat="doc in model.results">
+				<h4><a href="{{doc.docData.path}}">{{doc.docData.name}}</a></h4>
+				<p ng-bind-html="doc.brief"></p>
+				<div class="space"></div>
+			</article>
+		</main>
+
+		<script type="text/javascript" src="includes\js\lib\angular\angular.min.js"></script>
+		<script type="text/javascript" src="includes\js\lib\angular\angular-sanitize.min.js"></script>
+		<script type="text/javascript" src="includes\js\loadingOverlay.js"></script>
+		<script type="text/javascript" src="includes\js\searchApp.js"></script>
 		</div>
 	</body>
 </html>
