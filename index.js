@@ -714,23 +714,25 @@ app.get("/cquery", function(req, res) {
 
 	var docs = [];
 
-	// function CommitOperators(complex) {
+	function CommitOperators(complex) {
 
-	// 	for(var i = 0; i < complex.length; ++i) {
+		for(var i = 0; i < complex.length; ++i) {
 
-	// 		if(complex[i].t == 0) {
-	// 			var words = [];
-	// 			for(var j = 0; j < complex[i].v.length) {
-	// 				if(words.length == 0) {
+			if(complex[i].t == 0) {
+				var words = [];
+				for(var j = 0; j < complex[i].v.length; ++j) {
+					if(complex[i].v[j].localeCompare("AND")) {
+						if(words.length == 0) {
+							return [];
+						} else {
+						}
+					}
+				}
+			}
 
-	// 				}
-	// 				if(complex[i].v[j].localeCompare("AND"))
-	// 			}
-	// 		}
+		}
 
-	// 	}
-
-	// }
+	}
 
 	res.SendJson(complex);
 
