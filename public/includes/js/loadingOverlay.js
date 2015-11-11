@@ -104,7 +104,7 @@ function Spinny(parent, color, speed, size) {
 
 		setTimeout(function() {
 
-			console.log("Drawing");
+			// console.log("Drawing");
 
 			deltaTime = (timeStamp - prevFrame) / 1000;
 			prevFrame = timeStamp;
@@ -115,7 +115,7 @@ function Spinny(parent, color, speed, size) {
 
 			// console.log(deltaTime, eAngle);
 
-			console.log(halter);
+			// console.log(halter);
 			if(halter) {
 				halter = false;
 			} else {

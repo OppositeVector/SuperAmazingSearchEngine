@@ -33,6 +33,7 @@ app.controller("BodyController", ["$scope", "$http", "$location", "$sanitize", f
 			} else {
 				console.log(res.data.data);
 				model.answers = [ { str: "Error retriving query: " + res.data.data } ];
+				model.results = [];
 			}
 			lo.Clear();
 		}, function(err) {

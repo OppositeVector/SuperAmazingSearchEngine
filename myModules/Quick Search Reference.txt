@@ -1,0 +1,508 @@
+[
+    {
+        "name": "ε",
+        "type": ​0,
+        "index": ​0,
+        "arr": [
+            {
+                "index": ​0
+            }
+        ],
+        "first": [
+            ​0
+        ]
+    },
+    {
+        "name": "$",
+        "type": ​0,
+        "index": ​1,
+        "arr": [
+            {
+                "index": ​1
+            }
+        ],
+        "first": [
+            1
+        ]
+
+    },
+    {
+        "name": "AND",
+        "index": ​2,
+        "type": ​0,
+        "arr": [
+            {
+                "pattern": "AND",
+                "name": "AND",
+                "index": ​2
+            },
+            {
+                "pattern": "\\&",
+                "name": "AND",
+                "index": ​2
+            }
+        ],
+        "first": [
+            2
+        ]
+    },
+    {
+        "name": "OR",
+        "index": ​3,
+        "type": ​0,
+        "arr": [
+            {
+                "pattern": "OR",
+                "name": "OR",
+                "index": ​3
+            },
+            {
+                "pattern": "\\|",
+                "name": "OR",
+                "index": ​3
+            }
+        ],
+        "first": [
+            3
+        ]
+    },
+    {
+        "name": "NOT",
+        "index": ​4,
+        "type": ​0,
+        "arr": [
+            {
+                "pattern": "NOT",
+                "name": "NOT",
+                "index": ​4
+            },
+            {
+                "pattern": "\\!",
+                "name": "NOT",
+                "index": ​4
+            }
+        ],
+        "first": [
+            ​4
+        ]
+    },
+    {
+        "name": "OPEN",
+        "index": ​5,
+        "type": ​0,
+        "arr": [
+            {
+                "pattern": "\\(",
+                "name": "OPEN",
+                "index": ​5
+            }
+        ],
+        "first": [
+            5
+        ]
+    },
+    {
+
+        "name": "CLOSE",
+        "index": ​6,
+        "type": ​0,
+        "arr": [
+            {
+                "pattern": "\\)",
+                "name": "CLOSE",
+                "index": ​6
+            }
+        ],
+        "first": [
+            6
+        ]
+    },
+    {
+        "name": "FULL",
+        "index": ​7,
+        "type": ​0,
+        "arr": [
+            {
+                "pattern": "\"",
+                "name": "FULL",
+                "index": ​7
+            }
+        ],
+        "first": [
+            7
+        ]
+    },
+    {
+
+        "name": "WORD",
+        "index": ​8,
+        "type": ​0,
+        "arr": [
+            {
+                "pattern": "[a-zA-Z0-9]+",
+                "name": "WORD",
+                "index": ​8
+            }
+        ],
+        "first": [
+            8
+        ]
+    },
+    {
+        "name": "start",
+        "index": ​9,
+        "type": ​1,
+        "arr": [
+            {
+                "name": "start",
+                "def": "expression",
+                "index": ​9,
+                "brokenDef": [
+                    "expression"
+                ],
+                "brokenDefEnum": [
+                    10
+                ]
+            }
+        ],
+        "first": [
+            ​8,
+            ​5,
+            ​2,
+            ​4,
+            ​7,
+            ​3
+        ],
+        "follow": [
+            ​1
+        ]
+    },
+    {
+
+        "name": "expression",
+        "index": ​10,
+        "type": ​1,
+        "arr": [
+            {
+                "name": "expression",
+                "def": "words expression",
+                "index": ​10,
+                "brokenDef": [
+                    "words",
+                    "expression"
+                ],
+                "brokenDefEnum": [
+                    ​13,
+                    ​10
+                ]
+            },
+            {
+                "name": "expression",
+                "def": "words",
+                "index": ​10,
+                "brokenDef": [
+                    "words"
+                ],
+                "brokenDefEnum": [
+                    13
+                ]
+            },
+            {
+                "name": "expression",
+                "def": "relasionable AND relasionable",
+                "index": ​10,
+                "brokenDef": [
+                    "relasionable",
+                    "AND",
+                    "relasionable"
+                ],
+                "brokenDefEnum": [
+                    ​12,
+                    ​2,
+                    ​12
+                ]
+            },
+            {
+                "name": "expression",
+                "def": "NOT relasionable",
+                "index": ​10,
+                "brokenDef": [
+                    "NOT",
+                    "relasionable"
+                ],
+                "brokenDefEnum": [
+                    ​4,
+                    ​12
+                ]
+            },
+            {
+                "name": "expression",
+                "def": "FULL words FULL",
+                "index": ​10,
+                "brokenDef": 
+
+            [
+
+                "FULL",
+                "words",
+                "FULL"
+
+            ],
+            "brokenDefEnum": 
+
+                [
+                    ​7,
+                    ​13,
+                    ​7
+                ]
+
+            },
+{
+
+    "name": "expression",
+    "def": "relasionable OR relasionable",
+    "index": ​10,
+    "brokenDef": 
+
+[
+
+    "relasionable",
+    "OR",
+    "relasionable"
+
+],
+"brokenDefEnum": 
+
+        [
+            ​12,
+            ​3,
+            ​12
+        ]
+    }
+
+],
+"first": 
+[
+
+    ​8,
+    ​5,
+    ​2,
+    ​4,
+    ​7,
+    ​3
+
+],
+"follow": 
+
+    [
+        ​1,
+        ​6
+    ]
+
+},
+{
+
+    "name": "closedExpression",
+    "index": ​11,
+    "type": ​1,
+    "arr": 
+
+[
+
+{
+
+    "name": "closedExpression",
+    "def": "OPEN expression CLOSE",
+    "index": ​11,
+    "brokenDef": 
+
+[
+
+    "OPEN",
+    "expression",
+    "CLOSE"
+
+],
+"brokenDefEnum": 
+
+    [
+        ​5,
+        ​10,
+        ​6
+    ]
+
+},
+{
+
+    "name": "closedExpression",
+    "def": "ε",
+    "index": ​11,
+    "brokenDef": 
+
+[
+
+    "ε"
+
+],
+"brokenDefEnum": 
+
+        [
+            ​0
+        ]
+    }
+
+],
+"first": 
+[
+
+    ​5,
+    ​0
+
+],
+"follow": 
+
+    [
+        ​2,
+        ​1,
+        ​6,
+        ​3
+    ]
+
+},
+{
+
+    "name": "relasionable",
+    "index": ​12,
+    "type": ​1,
+    "arr": 
+
+[
+
+{
+
+    "name": "relasionable",
+    "def": "WORD",
+    "index": ​12,
+    "brokenDef": 
+
+[
+
+    "WORD"
+
+],
+"brokenDefEnum": 
+
+    [
+        ​8
+    ]
+
+},
+{
+
+    "name": "relasionable",
+    "def": "closedExpression",
+    "index": ​12,
+    "brokenDef": 
+
+[
+
+    "closedExpression"
+
+],
+"brokenDefEnum": 
+
+        [
+            ​11
+        ]
+    }
+
+],
+"first": 
+[
+
+    ​8,
+    ​5,
+    ​0
+
+],
+"follow": 
+
+    [
+        ​2,
+        ​1,
+        ​6,
+        ​3
+    ]
+
+},
+{
+
+    "name": "words",
+    "index": ​13,
+    "type": ​1,
+    "arr": 
+
+[
+
+{
+
+    "name": "words",
+    "def": "WORD words",
+    "index": ​13,
+    "brokenDef": 
+
+[
+
+    "WORD",
+    "words"
+
+],
+"brokenDefEnum": 
+
+    [
+        ​8,
+        ​13
+    ]
+
+},
+{
+
+    "name": "words",
+    "def": "WORD",
+    "index": ​13,
+    "brokenDef": 
+
+[
+
+    "WORD"
+
+],
+"brokenDefEnum": 
+
+        [
+            ​8
+        ]
+    }
+
+],
+"first": 
+[
+
+    ​8
+
+],
+"follow": 
+
+        [
+            ​8,
+            ​5,
+            ​2,
+            ​4,
+            ​7,
+            ​3,
+            ​1,
+            ​6
+        ]
+    }
+
+]

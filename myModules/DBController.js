@@ -4,6 +4,7 @@ var docSchema = require("./DocSchema");
 var analyzer = require("./Analyzer");
 var ConfigHandler = require("./ConfigHandler");
 var stopList = require('./StopList');
+var Phrase = require("./Phrase");
 
 mongoose.connect(process.env.MONGOLAB_URI);
 var con = exports.connection = mongoose.connection;
@@ -12,7 +13,7 @@ var docModel = mongoose.model("docM", docSchema.Schema);
 
 var TAG = "DBController";
 
-var verbose = false;
+var verbose = true;
 
 function GetNewDocId(callback) {
 
@@ -358,139 +359,8 @@ exports.GetWords = function(words, callback) {
 
 }
 
-var AddExclusivly = exports.AddExclusivly = function AddExclusivly(docs, word) {
 
-	if(word == null) {
-		return docs;
-	}
 
-	var retVal = [];
-
-	if((docs == null) || (docs.length == 0)) {
-
-		for(var i = 0; i < word.appearsIn.length; ++i) {
-			retVal.push({ 
-				doc: word.appearsIn[i].doc, 
-				words: [ 
-					{ 
-						word: word._id, 
-						total: word.total, 
-						count: word.appearsIn[i].count, 
-						positions: word.appearsIn[i].positions
-					} 
-				]
-			});
-		}
-
-	} else {
-
-		retVal = docs;
-
-		for(var i = 0; i < retVal.length; ++i) {
-
-			var notFound = true;
-			for(var j = 0; j < word.appearsIn.length; ++j) {
-				if(retVal[i].doc == word.appearsIn[j].doc) {
-					notFound = false;
-					retVal[i].words.push({
-						word: word._id, 
-						total: word.total, 
-						count: word.appearsIn[i].count, 
-						positions: word.appearsIn[i].positions
-					});
-					break;
-				}
-			}
-
-			if(notFound) {
-				retVal.splice(i, 1);
-				--i;
-			}
-		}
-
-	}
-
-	return retVal;
-
-}
-
-var AddInclusivly = exports.AddInclusivly = function (docs, word) {
-
-	if(word == null) {
-		return docs;
-	}
-
-	var retVal = [];
-
-	if((docs == null) || (docs.length == 0)) {
-
-		for(var i = 0; i < word.appearsIn.length; ++i) {
-			retVal.push({ 
-				doc: word.appearsIn[i].doc, 
-				words: [ 
-					{ 
-						word: word._id, 
-						total: word.total, 
-						count: word.appearsIn[i].count, 
-						positions: word.appearsIn[i].positions
-					} 
-				]
-			});
-		}
-
-	} else {
-
-		retVal = docs;
-
-		for(var i = 0; i < retVal.length; ++i) {
-
-			for(var j = 0; j < word.appearsIn.length; ++j) {
-				if(retVal[i].doc == word.appearsIn[j].doc) {
-					retVal[i].words.push({
-						word: word._id, 
-						total: word.total, 
-						count: word.appearsIn[i].count, 
-						positions: word.appearsIn[i].positions
-					});
-					break;
-				}
-			}
-
-		}
-
-	}
-
-	return retVal;
-
-}
-
-var Exclude = exports.Exclude = function(docs, word) {
-
-	if(word == null) {
-		return docs;
-	}
-
-	if((docs == null) || (docs.length == 0)) {
-		return docs;
-	} else {
-
-		for(var i = 0; i < docs.length; ++i) {
-
-			for(var j = 0; j < word.appearsIn.length; ++j) {
-				if(docs[i].doc == word.appearsIn[j].doc) {
-					docs.splice(i, 1);
-					--i;
-					break;
-				}
-			}
-
-		}
-
-	}
-
-	return docs;
-
-}
 
 // function ExclusiveArrayJoin(baseWord, cutoffWord) {
 
@@ -517,6 +387,165 @@ var Exclude = exports.Exclude = function(docs, word) {
 // 	return retVal;
 
 // }
+
+exports.GetWordsS = function(phrase, callback) {
+
+	var words = phrase.split(" ");
+
+
+
+}
+
+function GetWordsRecursivly(tokens, pos, set) {
+
+	if(pos == null) {
+		pos = { index : 0 };
+	}
+
+	if(set == null) {
+		set = { };
+	}
+
+	while(pos.index < tokens.length) {
+
+		if(tokens[pos.index].value.localeCompare("(") == 0) {
+			++pos.index;
+			var words = GetWordsRecursivly(tokens, pos);
+		} else if(tokens[pos.index].value.localeCompare(")") == 0) {
+
+		} else if(tokens[pos.index].value.localeCompare("AND") == 0) {
+
+		} else if(tokens[pos.index].value.localeCompare("OR") == 0) {
+
+		} else if(tokens[pos.index].value.localeCompare("NOT") == 0) {
+
+		} else if(tokens[pos.index].value.localeCompare("FULL") == 0) {
+
+		} else {
+
+		}
+
+	}
+
+}
+
+exports.GetWordsLexical = function(phrase, callback) {
+
+	var parser = new Phrase.Parser(phrase);
+	wordModel.find({ _id: { $in: parser.words }}, function(err, data) {
+
+		if(err) {
+			callback(err);
+			return;
+		}
+
+		parser.words = data;
+
+		var documentList = parser.Analyze();
+
+		callback(null, documentList);
+
+	});
+	// var lexer = new lexerModule.SearchLexer();
+	// var tokens = lexer.Analyze(phrase);
+
+	// callback(tokens);
+
+}
+
+exports.GetWordsStructured = function(phrase, callback) {
+
+	var index = 0;
+	var depth = -1;
+
+	function BreakComplex(complex) {
+
+		if(complex == null) {
+			complex = [];
+		}
+
+		++depth;
+		var retVal = [];
+		// if(query[index] == "("){
+		// 	complex.push({ t: 1, v: [] })
+		// } else {
+		// 	complex.push({ t: 0, v: "" });
+		// }
+		var i = 0;
+
+		var keepGoing = true;
+
+		while((index < query.length) && (keepGoing == true)) {
+
+			if(i == complex.length) {
+
+				if(query[index] == "(") {
+					complex.push({ t: 1, v: [] });
+					++index;
+					complex[i].v = BreakComplex();
+					++i;
+				} else if(query[index] == ")") {
+					keepGoing = false;
+				} else {
+					complex.push({ t: 0, v: "" });
+				}
+				
+			} else {
+
+				if(query[index] == "(") {
+					++i;
+				} else if(query[index] == ")") {
+					keepGoing = false;
+					++index;
+				} else {
+					complex[i].v += query[index];
+					++index;
+				}
+
+			}
+
+		}
+
+		--depth;
+
+		return complex;
+
+	}
+
+	var complex = BreakComplex();
+
+	ParseOperators(complex);
+
+	var docs = [];
+
+	function CommitOperators(complex) {
+
+		for(var i = 0; i < complex.length; ++i) {
+
+			if(complex[i].t == 0) {
+				var words = [];
+				for(var j = 0; j < complex[i].v.length; ++j) {
+					if(complex[i].v[j].localeCompare("AND")) {
+						if(words.length == 0) {
+							return [];
+						} else {
+							var saveI = i;
+							var saveJ = j
+							wordModel.find({ _id: { $in: words } }, function(err, data) {
+
+							});
+						}
+					} else {
+						words.push(complex[i].v[j]);
+					}
+				}
+			}
+
+		}
+
+	}
+
+}
 
 exports.GetWordsAnd = function(words, callback) {
 

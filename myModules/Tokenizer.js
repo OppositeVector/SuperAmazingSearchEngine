@@ -154,3 +154,84 @@ function ParseParenthesis(st, current) {
 	return retVal;
 
 }
+
+// Tokenizer written by Eli Bendersky's
+// http://eli.thegreenplace.net/2013/06/25/regex-based-lexical-analysis-in-python-and-javascript
+
+var Tokenizer = exports.Tokenizer = function(rules, skipWhiteSpace) {
+
+	if(skipWhiteSpace == null) {
+		skipWhiteSpace = true;
+	}
+
+	this.rules = rules;
+	var regex_parts = [];
+	for (var i = 0; i < this.rules.length; ++i) {
+		regex_parts.push('(' + rules[i].pattern + ')');
+	}
+	console.log(regex_parts.join("|"));
+	this.regex = new RegExp(regex_parts.join('|'), 'g');
+	this.skipWhiteSpace = skipWhiteSpace ? new RegExp('\\S', 'g') : null;
+	this.buf = '';
+
+}
+
+// Initialize the Lexer's buffer. This resets the lexer's internal state and
+// subsequent tokens will be returned starting with the beginning of the new
+// buffer.
+Tokenizer.prototype.Input = function(buf) {
+	this.buf = buf;
+	this.regex.lastIndex = 0;
+	infini = 0;
+}
+
+var infini = 0 ;
+
+// Get the next token from the current buffer. A token is an object with
+// the following properties:
+// - name: name of the pattern that this token matched (taken from rules).
+// - value: actual string value of the token.
+// - pos: offset in the current buffer where the token starts.
+//
+// If there are no more tokens in the buffer, returns null.
+// In case of an error, throws Error.
+Tokenizer.prototype.Next = function() {
+	// End of input?
+	if ((this.regex.lastIndex >= this.buf.length) || (infini >= 100)) {
+		return null;
+	}
+
+	++infini;
+
+	// console.log(this.regex.lastIndex);
+
+	if (this.skipWhiteSpace) {
+		this.skipWhiteSpace.lastIndex = this.regex.lastIndex;
+		var match = this.skipWhiteSpace.exec(this.buf);
+		if (match) {
+	  		this.regex.lastIndex = match.index;
+		} else {
+		  	return null;
+		}
+	}
+
+	var result = this.regex.exec(this.buf);
+	// console.log(result);
+	if (result === null) {
+		throw Error('Cannot match a token at position ' + this.regex.lastIndex);
+	} else {
+		for (var i = 0; i < this.rules.length; i++) {
+			// Find the matching rulea SO question
+			if (result[i + 1] !== undefined) {
+				return {
+					name: this.rules[i].name,
+					ruleIndex: i,
+			        value: result[0].toLowerCase(), 
+			        pos: result.index
+			    };
+			}
+		}
+		// Shouldn't get here, because at least one rule matched.
+		throw Error('Internal error');
+	}
+}

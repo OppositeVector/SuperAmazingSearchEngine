@@ -13,6 +13,7 @@ var dbc = require('./myModules/DBController');
 var tokenizer = require("./myModules/Tokenizer");
 var stopList = require("./myModules/StopList");
 var hash = require("./myModules/Hash");
+var lexerModule = require("./myModules/Lexer");
 
 Array.prototype.insert = function (index, items) { this.splice.apply(this, [index, 0].concat(items)); }
 
@@ -316,7 +317,7 @@ var analyzer = require("./myModules/Analyzer");
 app.get("/test", function(req, res) {
 
 	var htmlUrl = url.parse(req.url,true).query.url;
-	var protocolRegex = /https?:\/\//;
+	var protocolRegex = /^https?:\/\//; // find http:// or https:// in the begining
 
 	if(!protocolRegex.test(htmlUrl)) {
 		htmlUrl = "http://" + htmlUrl;
@@ -408,6 +409,10 @@ app.get("/wordTest", function(req, res) {
 function CalculatePageRanks(words, docs) {
 
 	// Find clusters
+
+	if(docs == null) {
+		return;
+	}
 
 	var clusterRange = 300;
 
@@ -540,25 +545,17 @@ function FindSpaceForwad(str, index) {
 app.get("/query", function(req, res) {
 
 	var query = url.parse(req.url, true).query.query;
-	query = query.toLowerCase();
-	var words = query.split(" ");
 
-	for(var i = 0; i < words.length; ++i) {
-		if(stopList.check(words[i])) {
-			words.splice(i, 1);
-			--i;
-		}
-	}
+	dbc.GetWordsLexical(query, function(err, data) {
 
-	dbc.GetWordsOr(words, function(err, data) {
 		if(err) {
-			res.SendJson({ result: 0, data: err});
-			return;
+			res.SendJson({result: 0, data: err });
 		} else {
 
-			CalculatePageRanks(words, data);
+			CalculatePageRanks(data.words, data.docs.arr);
+			console.log("HERE");
 
-			dbc.AssignDocuments(data, function(err, docs) {
+			dbc.AssignDocuments(data.docs.arr, function(err, docs) {
 
 				if(err) {
 					console.log("Error assigning documents:" + err);
@@ -567,7 +564,11 @@ app.get("/query", function(req, res) {
 
 				var i = 0;
 
+				console.log("GetBriefs");
+				console.log(docs);
 				function GetBriefs() {
+
+
 
 					request.get(docs[i].docData.path, function(err, response, body) {
 
@@ -584,10 +585,11 @@ app.get("/query", function(req, res) {
 								docs[i].brief = body.substr(FindSpaceBack(body, docs[i].words[0].positions[0] - 300), 1000);
 							}
 
-							docs[i].brief = ClearHtml(words, docs[i].brief) + " ...";
+							docs[i].brief = ClearHtml(data.words, docs[i].brief) + " ...";
 
 							++i;
 
+							console.log(docs);
 							if(i < docs.length) {
 								GetBriefs();
 							} else {
@@ -605,13 +607,88 @@ app.get("/query", function(req, res) {
 
 				if(i < docs.length) {
 					GetBriefs();
+				} else {
+					res.SendJson({ result: 0, data: "No documnets match the query"});
 				}
 				
-
 			});
-			
+
 		}
-	});
+
+	})
+
+	// query = query.toLowerCase();
+	// var words = query.split(" ");
+
+	// for(var i = 0; i < words.length; ++i) {
+	// 	if(stopList.check(words[i])) {
+	// 		words.splice(i, 1);
+	// 		--i;
+	// 	}
+	// }
+
+	// dbc.GetWordsOr(words, function(err, data) {
+	// 	if(err) {
+	// 		res.SendJson({ result: 0, data: err});
+	// 		return;
+	// 	} else {
+
+	// 		CalculatePageRanks(words, data);
+
+	// 		dbc.AssignDocuments(data, function(err, docs) {
+
+	// 			if(err) {
+	// 				console.log("Error assigning documents:" + err);
+	// 				return;
+	// 			}
+
+	// 			var i = 0;
+
+	// 			function GetBriefs() {
+
+	// 				request.get(docs[i].docData.path, function(err, response, body) {
+
+	// 					if(err) {
+
+	// 						console.log(err);
+	// 						data.brief = data;
+
+	// 					} else {
+
+	// 						if(docs[i].clusters.length > 0) {
+	// 							docs[i].brief = body.substr(FindSpaceBack(body, docs[i].clusters[0].a[0].p - 100), 1200);
+	// 						} else {
+	// 							docs[i].brief = body.substr(FindSpaceBack(body, docs[i].words[0].positions[0] - 300), 1000);
+	// 						}
+
+	// 						docs[i].brief = ClearHtml(words, docs[i].brief) + " ...";
+
+	// 						++i;
+
+	// 						if(i < docs.length) {
+	// 							GetBriefs();
+	// 						} else {
+	// 							docs.sort(function(a, b) {
+	// 								return b.rank - a.rank;
+	// 							});
+	// 							res.SendJson({ result: 1, data: docs });
+	// 						}
+							
+	// 					}
+
+	// 				});
+
+	// 			}
+
+	// 			if(i < docs.length) {
+	// 				GetBriefs();
+	// 			}
+				
+
+	// 		});
+			
+	// 	}
+	// });
 
 });
 
@@ -725,6 +802,7 @@ app.get("/cquery", function(req, res) {
 						if(words.length == 0) {
 							return [];
 						} else {
+							docs = dbc.GetWordsOr(words);
 						}
 					}
 				}
@@ -741,6 +819,38 @@ app.get("/cquery", function(req, res) {
 app.get("/aquery", function(req, res) {
 
 
+
+});
+
+app.get("/lexerTest", function(req, res) {
+
+	var query = url.parse(req.url, true).query.query;
+
+	dbc.GetWordsLexical(query, function(err, data) {
+		if(err) {
+			res.SendJson({ result: 0, data: err });
+		} else {
+			res.SendJson({ result: 1, data: data });
+		}
+	});
+
+});
+
+var sortModule = require("./myModules/Sort");
+
+app.get("/sortTest", function(req, res) {
+
+	var query = url.parse(req.url, true).query.query;
+	var strs = query.split(",");
+	var vals = [];
+	for(var i = 0; i < strs.length; ++i) {
+		var val = parseFloat(strs[i]);
+		if(!isNaN(val)) {
+			vals.push(val);
+		}
+	}
+
+	res.SendJson({ result: 1, data: { dup: sortModule.QuickSort(vals), arr: vals } });
 
 });
 

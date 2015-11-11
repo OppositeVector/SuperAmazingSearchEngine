@@ -1,7 +1,7 @@
 var fs = require('fs');
 var hash = require("./Hash");
 
-var verbose = false;
+var verbose = true;
 
 // function HashCode(str) {
 	
